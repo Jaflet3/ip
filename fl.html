@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>DON WORLD - A Flight Ticket Reservation</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Welcome Header -->
+<header style="text-align:center; padding: 20px; background-color: #f5f5f5;">
+    <h1 style="font-size: 36px; color: #003366;">Welcome to DON WORLD</h1>
+    <p style="font-size: 16px;">Book flights, check schedules, and manage your journey with ease.</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav style="background-color: #ddd; padding: 10px; text-align:center;">
+    <a href="#" style="margin: 0 10px; font-weight:bold;">Home</a>
+    <a href="#" style="margin: 0 10px; font-weight:bold;">Flights</a>
+    <a href="#" style="margin: 0 10px; font-weight:bold;">Booking</a>
+    <a href="#" style="margin: 0 10px; font-weight:bold;">About</a>
+    <a href="#" style="margin: 0 10px; font-weight:bold;">Login</a>
+</nav>
+
+<!-- Flight Images -->
+<section style="text-align:center; margin-top: 40px;">
+    <h2>Popular Routes</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+        <img src="i1.jpg" alt="Flight 1" style="width:200px; height:120px; border-radius:8px;">
+        <img src="i2.jpg" alt="Flight 2" style="width:200px; height:120px; border-radius:8px;">
+        <img src="i3.jpg" alt="Flight 3" style="width:200px; height:120px; border-radius:8px;">
+    </div>
+</section>
+
+<!-- Booking Table -->
+<section style="margin: 40px auto; width: 90%; text-align: center;">
+    <h2>Available Flights</h2>
+    <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <tr style="background-color: #ddd;">
+            <th>S.No</th>
+            <th>Flight No</th>
+            <th>Airline</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>AI101</td>
+            <td>Air India</td>
+            <td>Delhi</td>
+            <td>London</td>
+            <td><button>Book</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>6E203</td>
+            <td>IndiGo</td>
+            <td>Mumbai</td>
+            <td>Dubai</td>
+            <td><button>Book</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SG456</td>
+            <td>SpiceJet</td>
+            <td>Chennai</td>
+            <td>Singapore</td>
+            <td><button>Book</button></td>
+        </tr>
+    </table>
+</section>
+</body>
+
+</html>
