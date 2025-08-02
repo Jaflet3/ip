@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Elegant Botteque - Payment</title>
+</head>
+<body>
+
+  <h1 align="center">Checkout - Payment Details</h1>
+
+  <form action="cart.html" method="post" style="margin: auto; width: 320px; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+    <label for="fullname">Full Name:</label><br />
+    <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe" style="width: 100%;"><br /><br />
+
+    <label for="cardnumber">Card Number:</label><br />
+    <input type="text" id="cardnumber" name="cardnumber" required placeholder="1234 5678 9012 3456" maxlength="19" pattern="[0-9\s]{13,19}" style="width: 100%;"><br /><br />
+
+    <label for="expiry">Expiry Date (MM/YY):</label><br />
+    <input type="text" id="expiry" name="expiry" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" style="width: 100%;"><br /><br />
+
+    <label for="cvv">CVV:</label><br />
+    <input type="password" id="cvv" name="cvv" required placeholder="123" maxlength="4" pattern="\d{3,4}" style="width: 100%;"><br /><br />
+
+    <fieldset>
+      <legend>Payment Method:</legend>
+      <input type="radio" id="credit" name="payment_method" value="credit" checked />
+      <label for="credit">Credit Card</label><br />
+      <input type="radio" id="debit" name="payment_method" value="debit" />
+      <label for="debit">Debit Card</label><br />
+      <input type="radio" id="paypal" name="payment_method" value="paypal" />
+      <label for="paypal">PayPal</label><br />
+      <input type="radio" id="upi" name="payment_method" value="upi" />
+      <label for="upi">UPI / Wallet</label><br />
+    </fieldset>
+
+    <br />
+
+    <fieldset>
+      <legend>Special Offers</legend>
+      <ul>
+        <li>10% off on purchases over ₹5,000</li>
+        <li>Free shipping on prepaid orders</li>
+        <li>Use PayPal and get a free gift</li>
+      </ul>
+    </fieldset>
+
+    <br />
+    <button type="submit" style="width: 100%; padding: 10px; font-size: 16px;">Pay Now</button>
+  </form>
+
+</body>
+</html>
